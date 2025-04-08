@@ -8,7 +8,7 @@ export default function Home() {
         <div className="#">
           <ul>
             <li><a>About</a></li>
-            <li><a>skills</a></li>
+            <li><a>Skills</a></li>
             <li><a>Projects</a></li>
             <li><a>Contact</a></li>
           </ul>
