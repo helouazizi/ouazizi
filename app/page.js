@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
 
       {/* Main Content */}
-      <main className="bg-gray-600 dark:bg-[#121212] px-6 py-12 sm:px-20 pt-24">
+      <main className="bg-white dark:bg-[#121212] px-6 py-12 sm:px-20 pt-24">
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center text-center sm:text-left">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-white">
