@@ -5,13 +5,6 @@ export default function Home() {
     <div className="min-h-screen px-6 py-12 sm:px-20 font-sans bg-white text-black dark:bg-[#121212] dark:text-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center gap-4 mb-24">
-        <Image
-          src="/avatar.png" // Replace with your actual image
-          alt="Your Avatar"
-          width={120}
-          height={120}
-          className="rounded-full border dark:invert"
-        />
         <h1 className="text-4xl font-bold">Hi, I'm John Doe</h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           Full-stack Developer & Cybersecurity Enthusiast
@@ -43,12 +36,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Contact */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-6">Contact</h2>
-        <p>Email: <a className="text-blue-600 dark:text-blue-400" href="mailto:john@example.com">john@example.com</a></p>
-        <p>GitHub: <a className="text-blue-600 dark:text-blue-400" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">your-username</a></p>
-      </section>
     </div>
   );
 }
