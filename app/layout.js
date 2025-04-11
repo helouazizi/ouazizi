@@ -1,17 +1,23 @@
+// app/layout.js
+import '../styles/globals.css'; // Import global styles
+import Header from './components/header'; // Import Header component
+import Footer from './components/footer'; // Import Footer component
 
-import "../styles/globals.css" ;
-
-export const metadata = {
-  title: "Ouazizi",
-  description: "Ouazizi a full-satck developper",
-};
-
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <body className="min-h-screen bg-white font-sans text-black dark:text-white">
+          {/* Header Component */}
+          <Header />
+
+          {/* Main Content */}
+          <main>{children}</main>
+
+          {/* Footer Component */}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }

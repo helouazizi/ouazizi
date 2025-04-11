@@ -1,3 +1,4 @@
+// app/components/footer.jsx
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
