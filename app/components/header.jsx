@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full px-6 py-4 sm:px-12 bg-white dark:bg-[#111] shadow-md fixed top-0 left-0 z-50 font-[var(--font-geist-sans)]">
+    <header className="w-full px-6 py-4 sm:px-12 bg-white dark:bg-[#111] shadow-md fixed top-0 left-0 z-50 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link
