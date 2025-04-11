@@ -1,0 +1,85 @@
+/* General Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #003366;
+    /* Navy Blue */
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo Styling */
+.header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Navigation Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #dc143c;
+    /* Crimson Red */
+}
+
+/* Burger Menu Styling */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger .line {
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 100%;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        /* Navy Blue */
+        padding: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+        
+    }
+
+    .burger {
+        display: flex;
+    }
+}
